@@ -1,0 +1,94 @@
+COnfiguracion de git : 
+git config --global user.name "Pangolin"
+git config --global user.email "deve13r0987n@gmail.com"
+git config --global -e
+git config --list
+
+
+5 - Que hace git por nosotros. Si borramos un archivo por accidente como recuperamos los ultimos cambios.
+Para recuperar todo el proyecto hasta el ultimo commit usamos el siguiente comando. 
+"git checkout --."
+
+Comandos:
+
+Agregar todos los tct del todo el proyecto.
+git add "*.txt"
+
+Agregar todos los txt en el directorio actual.
+git add *.txt
+
+Agregar todos los archivos 
+git add --all
+
+Agregar archivos que listemos
+git add <liata de archivos>
+
+Agregar todos los pdfs dentro de la carpeta pdfs
+git add pdfs/*.pdf
+
+Agregar todos los archivos dentro de la carpeta PDFs.
+git add pdfs/
+
+
+Aprendiendo a agregar archivos en git de formas diferentes
+La idea es que cada commit se comporte de forma especifica con commit independientes
+
+git add index.html
+git status 
+git commmit -m "Se creo el index.html" 
+
+Ahora queremos agregar los archivos con formato png
+
+git add *.png
+
+git commit -m "Agregando todas las imagenes png"
+
+Agregar todos los archivos que estan en la carpeta css fueron agregados al stage
+
+git add css/
+
+
+git commit -m "Agregando CSS"
+
+Agregar todos los archivos no queremos los xml
+
+git add -A 
+Veremos todos los archivo agregados
+git status  
+
+Vamos a quitar o excluir los archivos xml. lo regresa lo saca de stage
+
+git reset *.xml
+
+git commit -m "Se agregaron archivos de js y font"
+
+git status
+
+Agregando los archivos xml
+git add .
+git status
+git commit -m "Agregamos el browserconfig.xml"
+
+Revisar todos los movimientos que hicimos con el git log
+
+Otras formas de revisar el log y los cambios desde el último commit.
+
+Ver el historial 
+git log
+
+git log --oneline decorate --all --graph
+
+git status -s
+
+Ejecutar el git status en modo silence y -b para saber la rama en la que estamos.
+git status -s -b 
+
+Creando alias lg en git los alias se configuran de forma global
+git config --global alias.lg "log --online --decorate --all --graph"
+
+What is an SSH KEY?
+https://www.atlassian.com/git/tutorials/git-ssh
+
+f4850d16fb21e58a
+
+
